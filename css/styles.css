@@ -200,6 +200,9 @@ a {
     padding: 24px 24px 40px 16px;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
 }
 
 .menu-close-btn {
@@ -587,7 +590,7 @@ a {
 .webfooter {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 100px 0;
-    /* display: flex; */
+    
 }
 
 
@@ -616,6 +619,11 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
+}
+
+.webfooter-soc-box {
+    margin-bottom: 72px;
 }
 
 .webfooter-text {
@@ -626,15 +634,30 @@ a {
 
 }
 
-.webfooter-container {
+/* .webfooter-container {
     display: flex;
     align-items: baseline;
     position: relative;
+} */
 
+.webfooter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .webfooter-logo-box {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.webfooter-logo-box-kid {
+    margin: 0 auto;
 }
 
 .webfooter-icon-list {
@@ -821,22 +844,26 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .footer-form {
-    display: flex;
-    gap: 24px;
+    /* display: flex;
+    gap: 24px; */
+
 }
 
-.footer-form-container {
+/* .footer-form-container {
     position: absolute;
     right: 15px;
-}
+} */
 
 .footer-input {
-    width: 264px;
+    /* width: 264px;
     height: 40px;
-    padding-left: 16px;
+    padding-left: 16px; */
+    width: 288px;
+    height: 40px;
     border-radius: 4px;
     border: 1px solid var(--WHITE, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -846,6 +873,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 16px;
     
 }
 
@@ -874,6 +902,7 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .footer-btn:hover,
