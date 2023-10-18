@@ -608,7 +608,17 @@ a {
     
 }
 
+.webfooter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
 
+.webfooter-logo-box-kid {
+    margin: 0 auto;
+}
 
 .webfooter-logo {
     display: inline-block;
@@ -625,6 +635,13 @@ a {
 
 .webfooter-logo-studio {
     color: var(--CLOUD, #F4F4FD);
+}
+
+.webfooter-logo-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .webfooter-soc-text {
@@ -655,26 +672,10 @@ a {
     position: relative;
 } */
 
-.webfooter-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 1px;
-    margin: 0 auto;
-}
 
-.webfooter-logo-box {
-    /* margin-right: 120px; */
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 72px;
-}
 
-.webfooter-logo-box-kid {
-    margin: 0 auto;
-}
+
+
 
 .webfooter-icon-list {
     display: flex;
@@ -706,6 +707,90 @@ a {
 
 .webfooter-icon {
     fill: #f4f4fd;
+}
+
+.footer-input-title {
+    margin-bottom: 16px;
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+
+/* .footer-form-container {
+    position: absolute;
+    right: 15px;
+} */
+
+.footer-form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.footer-input {
+    /* width: 264px; */
+    height: 40px;
+    padding-left: 16px;
+    width: 288px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 16px;
+    opacity: 0.6;
+    
+}
+
+.footer-input::placeholder {
+    color: var(--WHITE, #FFF);
+
+}
+
+.footer-btn {
+    min-width: 165px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background-color: var(--IRIS, #4D5AE5);
+    border: none;
+    font-style: normal;
+    display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.footer-btn:hover,
+.footer-btn:focus,
+.footer-btn:active {
+    background-color: #404BBF;
+}
+
+
+
+.footer-modal-icon {
+    fill: #FFFFFF;
+    margin-left: 16px;
 }
 
 .input {
@@ -853,89 +938,6 @@ a {
     margin-bottom: 4px;
 }
 
-.footer-input-title {
-    margin-bottom: 16px;
-    color: var(--WHITE, #FFF);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-
-
-
-/* .footer-form-container {
-    position: absolute;
-    right: 15px;
-} */
-
-.footer-form {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    
-}
-
-.footer-input {
-    /* width: 264px; */
-    height: 40px;
-    padding-left: 16px;
-    width: 288px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--WHITE, #FFF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    margin-bottom: 16px;
-    opacity: 0.6;
-}
-
-.footer-input::placeholder {
-    color: var(--WHITE, #FFF);
-    
-}
-
-
-
-.footer-btn {
-    min-width: 165px;
-    height: 40px;
-    font-family: "Roboto", sans-serif;
-    color: var(--WHITE, #FFF);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border-radius: 4px;
-    background-color: var(--IRIS, #4D5AE5);
-    border: none;
-    font-style: normal;
-    display: flex;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-.footer-btn:hover,
-.footer-btn:focus,
-.footer-btn:active {
-    background-color: #404BBF;
-}
-
-
-
-.footer-modal-icon {
-    fill: #FFFFFF;
-    margin-left: 16px;
-}
 
 .modal-icon {
     fill: #2E2F42;
@@ -1108,45 +1110,46 @@ a {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/banner-bg-tab-2x.jpg);
             }
         }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: baseline;
+    }
+
+    .footer-input-title {
+        text-align: start;
+    }
+
+    .webfooter-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: start;
+        padding-left: 108px;
+    }
+
+    .webfooter-logo-box-kid {
+        margin: 0;
+    }
+
+    .webfooter-soc-text {
+        text-align: start;
+        margin-top: 0;
+    }
+
+    .webfooter-logo-box {
+        margin: 0 24px 0 0;
+        justify-content: start;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
 }
 
-.footer-form {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: baseline;
-}
 
-.footer-input-title {
-    text-align: start;
-}
-
-.webfooter-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: start;
-    padding-left: 107px;
-}
-
-.webfooter-logo-box-kid {
-    margin: 0;
-}
-
-.webfooter-soc-text {
-    text-align: start;
-    margin-top: 0;
-}
-
-.webfooter-logo-box {
-    margin: 0 24px 0 0;
-    justify-content: start;
-    
-}
-
-.footer-input {
-    width: 264px;
-}
 /* ======================DESKTOP============================ */
 
 
@@ -1218,6 +1221,18 @@ a {
 
     .banner-title {
         margin-bottom: 48px;
+    }
+
+    .webfooter-container {
+        padding-left: 15px;
+    }
+
+    .webfooter-logo-box {
+        margin-right: 120px;
+    }
+
+    .footer-form-container {
+        margin-left: auto;
     }
 
 }
