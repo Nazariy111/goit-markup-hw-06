@@ -234,7 +234,15 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link:active {
+    color: var(--OCEAN, #404BBF);
+}
+
 
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -248,6 +256,13 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-contact-link:focus,
+.mob-contact-link:active,
+.mob-contact-link:hover {
+    color: var(--IRIS, #4D5AE5);
 }
 
 .mob-menu-list {
@@ -645,7 +660,8 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+    padding-left: 1px;
+    margin: 0 auto;
 }
 
 .webfooter-logo-box {
@@ -847,21 +863,24 @@ a {
     text-align: center;
 }
 
-.footer-form {
-    /* display: flex;
-    gap: 24px; */
 
-}
 
 /* .footer-form-container {
     position: absolute;
     right: 15px;
 } */
 
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
 .footer-input {
-    /* width: 264px;
+    /* width: 264px; */
     height: 40px;
-    padding-left: 16px; */
+    padding-left: 16px;
     width: 288px;
     height: 40px;
     border-radius: 4px;
@@ -874,7 +893,7 @@ a {
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     margin-bottom: 16px;
-    
+    opacity: 0.6;
 }
 
 .footer-input::placeholder {
@@ -1091,6 +1110,43 @@ a {
         }
 }
 
+.footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: baseline;
+}
+
+.footer-input-title {
+    text-align: start;
+}
+
+.webfooter-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: start;
+    padding-left: 107px;
+}
+
+.webfooter-logo-box-kid {
+    margin: 0;
+}
+
+.webfooter-soc-text {
+    text-align: start;
+    margin-top: 0;
+}
+
+.webfooter-logo-box {
+    margin: 0 24px 0 0;
+    justify-content: start;
+    
+}
+
+.footer-input {
+    width: 264px;
+}
 /* ======================DESKTOP============================ */
 
 
