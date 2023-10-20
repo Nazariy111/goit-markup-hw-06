@@ -182,6 +182,10 @@ a {
     color: var(--OCEAN, #404BBF);
 }
 
+.mob-contact-list:not(:hover) .mob-contact-item:first-child .mob-contact-link {
+    color: var(--IRIS, #4D5AE5);
+}
+
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -851,8 +855,8 @@ a {
 
 .modal-form-btn {
     display: block;
-    min-width: 169px;
-    height: 56px;
+    /* min-width: 169px;
+    height: 56px; */
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -1213,6 +1217,20 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
+
+    .features-list-title {
+        text-align: start;
+    }
+
+    .webfooter-soc-box {
+        margin-bottom: 0;
+    }
+
+    .footer-input {
+        margin-bottom: 0;
+    }
+
+    
 }
 
 
