@@ -693,7 +693,6 @@ a {
 }
 
 .footer-input {
-    height: 40px;
     padding-left: 16px;
     width: 288px;
     height: 40px;
@@ -1228,6 +1227,7 @@ a {
 
     .footer-input {
         margin-bottom: 0;
+        margin-top: 0;
     }
 
     
